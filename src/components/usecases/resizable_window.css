@@ -1,0 +1,63 @@
+.window-background {
+  height: var(--height, 50vw);
+  width: var(--width, 50vw);
+  background: linear-gradient(#BAFDB3, #89FF7F);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 0.2vw solid;
+  border-image: linear-gradient(0.25turn, #3855E9, #2AFFD8);
+  border-image-slice: 1;
+}
+
+.window-bar {
+  margin-top: 0.5vw;
+  margin-left: 0.5vw;
+  padding-top: 0.1vw;
+  padding-bottom: 0.1vw;
+  width: calc(var(--width, 50vw) - 1vw);
+  background: linear-gradient(#E792E7, #F1D2F1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.window-button {
+  margin-right: 0.5vw;
+  margin-top: 0.1vw;
+  background: #F2F2F2;
+  height: 1vw;
+  width: 1vw;
+  display: flex;
+  align-content: center;
+  box-shadow: 0.5vw 0.01vw 0.5vw 0.1vw rgb(0 0 0 / 0.2);
+}
+
+.window-button:hover {
+  background: hsl(0, 0%, 85%);
+}
+
+
+.window-content {
+  margin-top: 0.2vw;
+  margin-left: 1.2vw;
+  margin-right: 1.2vw;
+  padding-bottom: 0.2vw;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-asset {
+  border: 0.2vw solid;
+  border-image: linear-gradient(0.25turn, #3855E9, #2AFFD8);
+  border-image-slice: 1;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: calc(var(--width, 15vw));
+  background: #D9D9D9;
+  display: flex;
+  position: relative;
+  object-fit: cover;
+}

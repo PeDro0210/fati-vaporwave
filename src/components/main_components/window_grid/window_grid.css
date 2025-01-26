@@ -1,0 +1,18 @@
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 25vw;
+  row-gap: 3vw;
+  column-gap: 3vw;
+  margin-left: 2.5vw;
+
+}
+
+.spacer {
+  margin-top: 2.5vw;
+}
+
+.grid-part {
+  overflow-y: auto;
+  scrollbar-width: none;
+}
