@@ -1,15 +1,16 @@
 .video-grid {
   display: flex;
   flex-wrap: wrap;
-  height: 25vw;
   row-gap: 3vw;
   column-gap: 3vw;
   margin-left: 2.5vw;
+  max-height: 100vh;
+
 
 }
 
 .spacer {
-  margin-top: 3%;
+  margin-top: 3vw;
 }
 
 .grid-part {
