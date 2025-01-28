@@ -6,7 +6,7 @@ function AdPart() {
   return (
     <div className='ad-side'>
       < a href="https://github.com/PeDro0210" target="_blank" rel="noopener noreferrer" >
-        <ResizableWindow height="60vh" width="40vh" video={url} title="Ad.mp4" />
+        <ResizableWindow height="55vh" width="40vh" video={url} title="Ad.mp4" />
       </a >
     </div >
   )

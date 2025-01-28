@@ -40,7 +40,7 @@ function WindowGrid() {
       <div className="spacer"></div>
       <div className="video-grid">
         {videos.map((video) => {
-          return <ResizableWindow height="25vw" width="25vw" video={video} title="my beutiful wife.mp4" />
+          return <ResizableWindow height="35vw" width="35vw" video={video} title="my beutiful wife.mp4" />
         })}
       </div>
     </div>

@@ -2,15 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 3vw;
-  column-gap: 3vw;
+  column-gap: 2vw;
   margin-left: 2.5vw;
-  max-height: 100vh;
+  max-height: 50vh;
 
 
 }
 
 .spacer {
-  margin-top: 3vw;
+  margin-top: 9vw;
 }
 
 .grid-part {

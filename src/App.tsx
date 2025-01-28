@@ -1,10 +1,11 @@
 import AdPart from "./components/main_components/ad_part/ad_part"
 import UpperWindow from "./components/main_components/upper_window/upper_window"
 import WindowGrid from "./components/main_components/window_grid/window_grid"
-import "./App.css"
+import ErrorWindow from "./components/main_components/error/error_window"
 import { useEffect, useState } from "react"
 import clippy from "../src/assets/clippy.png";
-import ErrorWindow from "./components/main_components/error/error_window"
+import "./App.css"
+
 //TODO: comment this one day
 function App() {
   const [windowSize, setWindowSize] = useState({
@@ -12,8 +13,7 @@ function App() {
     height: window.innerHeight,
   });
 
-  const isPhoneBrowser = windowSize.width < 768;
-  const isTallBrowser = windowSize.height > 900;
+  const isPhoneBrowser = windowSize.width < 1000;
   useEffect(() => {
     console.log("Amor, no tienes ni idea de cuanto te amo, estos meses han sido unicos y queria expresarte mi Amor con algo para sacar mi creatividad adelante y darte la razon en que si soy alguien asi, Te amo mi amor eres unica hermosa y perfecta, ahorita ando algo cansado, pero el domingo te dire aun mas cosas hermosa")
 
@@ -32,11 +32,10 @@ function App() {
     <div className="crt">
       {isPhoneBrowser ? (
         <ErrorWindow />
-      ) : isTallBrowser ? (
-        <ErrorWindow />
       ) : (
         <div>
           <UpperWindow />
+          <div className="upper-window-replacer"></div>
           <div className="content-part">
             <WindowGrid />
             <AdPart />

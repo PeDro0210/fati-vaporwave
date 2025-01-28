@@ -1,5 +1,7 @@
 .upper-window {
+  position: fixed;
   display: block;
   margin-top: 1vw;
   margin-left: 2.5vw;
+  z-index: 2;
 }
